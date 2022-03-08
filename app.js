@@ -15,6 +15,17 @@
 
 // greet();
 
-console.log(name);
+// console.log(name);
 
-const name = 'Max';
+// const name = 'Max';
+
+function getName() {
+    return prompt('Your name:');
+}
+
+function greet() {
+    const userName = getName();
+    console.log('Hello ' + userName);
+}
+
+greet();
